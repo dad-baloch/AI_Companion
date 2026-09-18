@@ -1,0 +1,25 @@
+# Core LLM
+llama-cpp-python>=0.2.0
+
+# Speech Recognition (ASR)
+vosk>=0.3.45
+
+# Text-to-Speech (TTS) — Piper runs as external binary
+# Install piper-tts separately: pip install piper-tts
+
+# Vision & Emotion
+opencv-python>=4.8.0
+onnxruntime>=1.16.0
+numpy>=1.24.0
+
+# Audio I/O
+PyAudio>=0.2.13
+sounddevice>=0.4.6
+soundfile>=0.12.1
+
+# Configuration
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# Testing
+pytest>=7.4.0

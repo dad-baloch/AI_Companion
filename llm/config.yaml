@@ -1,0 +1,8 @@
+# LLM Configuration
+model_path: "models/llm/model.gguf"
+n_ctx: 2048
+n_threads: 4
+max_tokens: 256
+temperature: 0.7
+top_p: 0.9
+repeat_penalty: 1.1

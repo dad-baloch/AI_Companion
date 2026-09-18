@@ -1,34 +1,50 @@
-# Dependencies
-node_modules/
-vendor/
+# ==============================================
+# Offline AI Companion — .gitignore
+# ==============================================
 
-# Environment files
+# Model weights (too large for git)
+models/**
+!models/.gitkeep
+
+# Log files
+logs/**
+!logs/.gitkeep
+
+# Environment
 .env
 .env.local
-.env.*.local
 
-# Build output
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+*.egg-info/
 dist/
 build/
-out/
+
+# Audio temp files
+temp_audio/
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-npm-debug.log*
+# Benchmark outputs (keep structure, ignore data)
+benchmarks/results/**
+!benchmarks/results/.gitkeep
+benchmarks/test_audio/
 
-# Python
-__pycache__/
-*.pyc
-*.pyo
-venv/
-.venv/
+# Session data
+logs/sessions/

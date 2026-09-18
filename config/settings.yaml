@@ -1,0 +1,55 @@
+# ==============================================
+# Offline AI Companion — Central Settings
+# ==============================================
+
+# General
+app_name: "Offline AI Companion"
+log_level: "INFO"
+log_file: "logs/companion.log"
+
+# LLM Settings
+llm:
+  model_path: "models/llm/model.gguf"
+  n_ctx: 2048
+  n_threads: 4
+  max_tokens: 256
+  temperature: 0.7
+
+# ASR (Speech-to-Text) Settings
+asr:
+  engine: "vosk"
+  model_path: "models/vosk/vosk-model-small-en-us"
+  sample_rate: 16000
+
+# TTS (Text-to-Speech) Settings
+tts:
+  engine: "piper"
+  model_path: "models/tts/en_US-lessac-medium.onnx"
+  piper_binary: "piper"
+  sample_rate: 22050
+
+# Vision Settings
+vision:
+  camera_index: 0
+  use_dnn: true
+  frame_width: 640
+  frame_height: 480
+
+# Emotion Settings
+emotion:
+  model_path: "models/emotion/emotion_model.onnx"
+  smoothing_window: 10
+  confidence_threshold: 0.4
+
+# Memory Settings
+memory:
+  max_history: 50
+  persist_sessions: true
+  session_dir: "logs/sessions"
+
+# Audio Settings
+audio:
+  sample_rate: 16000
+  channels: 1
+  chunk_size: 4096
+  vad_energy_threshold: 300
